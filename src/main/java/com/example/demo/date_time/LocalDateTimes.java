@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.date_time;
 
 
 import java.time.*;
@@ -28,8 +28,13 @@ public class LocalDateTimes {
     public static void oldDateToLocalDate()
     {
         Date now = Calendar.getInstance().getTime();
+        LocalDate yesterday = LocalDate.of(2023, 3, 12);
         Instant instant = Instant.ofEpochMilli(now.getTime());
         LocalDate localDate = LocalDateTime.ofInstant(instant, ZoneId.systemDefault()).toLocalDate();
+        if(localDate.isAfter(yesterday)){
+            System.out.println("ok");
+        }else
+            System.out.println("not ok");
         System.out.println(now);
         System.out.println(localDate);
     }

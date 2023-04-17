@@ -25,8 +25,8 @@ public class GenericExceptionMapper implements ExceptionMapper<Exception> {
             int status = webApplicationException.getResponse().getStatus();
             return Response
                     .status(status)
-                    .entity(new ResponseEntity(requestId, new Date(), status, ex.getMessage())).build();
+                    .entity(new ResponseEntity(requestId, new Date(), new ResponseError(), ex.getMessage())).build();
         }
-        return Response.ok(new ResponseEntity(requestId, new Date(), 99, ex.getMessage())).build();
+        return Response.ok(new ResponseEntity(requestId, new Date(), new ResponseError(), ex.getMessage())).build();
     }
 }

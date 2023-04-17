@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.date_time.DateTimeUtils;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,10 +18,11 @@ public class ResponseEntity {
     private Object data;
 
 
-    public ResponseEntity(String requestId, Date at, Integer code, String message) {
+    public ResponseEntity(String requestId, Date at, ResponseError error, String message) {
         this.requestId = requestId;
-        this.at = new String();
-        this.error = new ResponseError(code, message);
+        this.at = DateTimeUtils.dd_MM_yyyy_HH_mm_ss(at);
+        this.error = error;
+        this.data = message;
     }
 
 
