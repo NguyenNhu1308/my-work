@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.string_array_list;
 
 import java.util.Scanner;
 

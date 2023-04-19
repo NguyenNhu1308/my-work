@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.SendEmails;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;

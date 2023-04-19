@@ -1,5 +1,7 @@
-package com.example.demo;
+package com.example.demo.exception;
 
+import com.example.demo.response.ResponseEntity;
+import com.example.demo.response.ResponseError;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

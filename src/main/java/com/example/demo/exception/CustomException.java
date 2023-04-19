@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.exception;
 
 public class CustomException extends RuntimeException {
     protected int code;

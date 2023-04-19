@@ -1,8 +1,6 @@
-package com.example.demo;
+package com.example.demo.total;
 
-public class test {
-
-
+public class supper {
 
     static class animal{
         public String action;
@@ -31,7 +29,6 @@ public class test {
             System.out.println("animal: "+ super.action);
 
             super.oke("animal");
-
 
         }
     }

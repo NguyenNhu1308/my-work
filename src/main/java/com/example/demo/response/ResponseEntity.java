@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.response;
 
 import com.example.demo.date_time.DateTimeUtils;
 import lombok.AllArgsConstructor;
