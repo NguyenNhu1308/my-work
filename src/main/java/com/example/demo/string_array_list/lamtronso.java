@@ -1,5 +1,8 @@
 package com.example.demo.string_array_list;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 import static java.lang.String.format;
@@ -29,6 +32,7 @@ public class lamtronso {
         double x = (double) Math.round(4.745634463 * 10) / 10;
         System.out.println("x:" + x);
 
+        //đánh giá sao, làm tròn số
         Scanner input = new Scanner(System.in);
         double test = input.nextDouble();
         double origin = Double.parseDouble(String.valueOf(test).substring(0, String.valueOf(test).indexOf(".")));
@@ -52,6 +56,17 @@ public class lamtronso {
         }
 
         System.out.println("point:" + point);
+
+
+
+        //format định dạng tiền tệ
+        Locale localeVN = new Locale("vi", "VN");
+        NumberFormat vn = NumberFormat.getInstance(localeVN);
+        double doubleNumber1 = 10000000000000000d;
+        String str2 = vn.format(doubleNumber1);
+        System.out.println("Số " + doubleNumber1 + " sau khi định dạng = " + str2);
+
+        //todo  -> source: https://freetuts.net/thu-vien-xu-ly-du-lieu-so-trong-java-1109.html
     }
 
 }

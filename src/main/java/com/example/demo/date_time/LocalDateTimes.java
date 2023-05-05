@@ -102,6 +102,11 @@ public class LocalDateTimes {
     public static void main(String[] args) {
         LocalDateTimes.oldDateToLocalDateTime();
         LocalDateTimes.oldDateToLocalDate();
+
+        Integer a = null;
+        String.valueOf(a);
+
+        System.out.println( String.valueOf(a));
 //        LocalDateTimes.oldDateToLocalDateTimeSecondOption();
     }
 }
